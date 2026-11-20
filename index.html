@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FrameFlow Studio</title>
 
+<meta name="google-site-verification" content="j5z0nOgb_2HdrB8h3_IcQi6Am0A2Ggi6kKPs8wAzG6U" />
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
 <style>
@@ -119,9 +121,7 @@ progress {
 
 <div class="card">
 <h3>📄 Import Animation PDF</h3>
-
 <input type="file" id="pdf" accept=".pdf,application/pdf">
-
 <p id="status">Select your PDF file.</p>
 <p id="count" class="small">No frames loaded</p>
 </div>
@@ -164,9 +164,7 @@ progress {
 
 <div class="card">
 <h3>🎥 Animation Preview</h3>
-
 <canvas id="preview"></canvas>
-
 <p id="frameNumber">Frame: 0 / 0</p>
 
 <button id="play" disabled>▶ Play Animation</button>
@@ -201,17 +199,13 @@ The original PDF quality limits the final result.
 
 <div class="card">
 <h3>🎞 Export MP4 Video</h3>
-
-<p class="small">
-Create your animation as an MP4 video.
-</p>
+<p class="small">Create your animation as an MP4 video.</p>
 
 <button id="mp4Export" disabled>
 🎬 Export MP4 Video
 </button>
 
 <p id="mp4Status">Import a PDF first.</p>
-
 <progress id="mp4Progress" value="0" max="100"></progress>
 
 <a id="mp4Download"
@@ -338,7 +332,6 @@ fileInput.addEventListener("change", async () => {
   framesBox.innerHTML = "";
 
   mp4ExportBtn.disabled = true;
-
   mp4Download.classList.remove("show");
 
   status.textContent = "Opening PDF...";
